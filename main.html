@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base Apparel</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+    *{
+        margin: 0;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    .wrapper{
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        margin: 0 auto;
+    }
+
+    ::placeholder {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        color: hsl(0, 36%, 70%); 
+        opacity: 0.7;
+        padding-left: 25px;
+        letter-spacing: 2px;
+    }
+
+    input:focus {
+        padding-left: 25px;
+    }
+
+    .email-form {
+        padding-bottom: 75px;
+    }
+
+    .email-form button {
+        background-image: linear-gradient(135deg, hsl(0, 80%, 91%), hsl(0, 74%, 79%)); 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        margin-top:30px; 
+        border-radius: 35px; 
+        margin-left: -75px;
+        border: thin solid transparent;
+        height: 57px;
+        width: 75px;
+        cursor: pointer;
+        
+        
+        
+    }
+
+    .email-form button:hover {
+        opacity: 0.7;
+    }
+  
+
+</style>
+<body>
+    <main class="wrapper">
+        <table class="main" align="center">
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td style="padding-top: 20px; padding-bottom: 20px;">
+                                <a href="#" target="blank"><img style="padding-left: 58.5px;" src="images/logo.svg" alt="Logo" title="logo"></a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td >
+                    <img id="banner" style="width: 600px; max-width: 100%;" src="images/hero-mobile.jpg" alt="Banner" title="Banner">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="desc" style="text-align: center; padding-top: 50px ; padding-bottom: 50px;">
+                                <h1 style="font-family: 'Josefin Sans', sans-serif;
+                                font-size: 4rem; letter-spacing: 13px;"><span style="color: hsl(0, 36%, 70%);font-weight: 300;">WE'RE</span><br>COMING<br>SOON</h1>
+                                <p style="font-family: 'Josefin Sans', sans-serif; font-size: 16px;
+                                color: hsl(0, 36%, 70%); font-weight: 900; letter-spacing: 1.5px; line-height: 25px; padding-top: 20px;">Hello fellow shopers! We're curently building<br>
+                                    our new fashion store. Add your email below to<br>
+                                    stay up-to-date with announcements and our <br>
+                                    launch deals.</p>
+                                
+                               
+                                
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="email-form">
+                                <form style="display: flex; align-items: center; justify-content: center;" id="form" action="" method="GET">
+                                <input id="email" required style="padding-top: 20px; padding-bottom: 20px; margin-top: 30px; width: 80vw; max-width: 600px; border-radius: 50px; border: thin solid #c0c0c0;" type="email" name="email" id="email" placeholder="Email Address">
+                                <button id="submit" type="submit" target="blank"><img src="images/icon-arrow.svg" alt=""></button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+
+    </main>
+
+    
+
+    
+<!-- <script>
+    let email = document.getElementById('email')
+    let submit = document.getElementById('submit')
+    let form = document.getElementById('form')
+
+    email.onkeydown = function() {
+        const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if (regex.test(email.value)) {
+            span[0].innerText = "Your email is valid"
+        }
+
+    }
+</script>    -->
+</body>
+
+</html>
